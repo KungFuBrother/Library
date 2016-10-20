@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="BingView">
+        <attr name="strokeWidth" format="dimension" />
+        <attr name="strokeColor" format="color" />
+        <attr name="innerCircleRadius" format="float" />
+    </declare-styleable>
+    <declare-styleable name="LEDView">
+        <attr name="ledColor" format="color" />
+        <attr name="ledNumber" format="string" />
+        <attr name="ledPointWidth" format="dimension" />
+        <attr name="ledIntervalWidth" format="dimension" />
+        <attr name="ledAutoScroll" format="dimension" />
+        <attr name="ledSingleLine" format="dimension" />
+    </declare-styleable>
+    <declare-styleable name="IndicatorView">
+        <attr name="IndicatorView_count" format="integer" />
+        <attr name="IndicatorView_pointWidth" format="dimension" />
+        <attr name="IndicatorView_pointColor" format="color" />
+        <attr name="IndicatorView_selectedPointWidth" format="dimension" />
+        <attr name="IndicatorView_selectedPointColor" format="color" />
+        <attr name="IndicatorView_lineHeight" format="dimension" />
+        <attr name="IndicatorView_textSize" format="dimension" />
+        <attr name="IndicatorView_animationMode">
+            <enum name="none" value="0" />
+            <enum name="scale" value="1" />
+            <enum name="flow" value="2" />
+        </attr>
+        <attr name="IndicatorView_animationDuration" format="integer" />
+        <attr name="IndicatorView_showLine" format="boolean" />
+        <attr name="IndicatorView_showNumber" format="boolean" />
+    </declare-styleable>
+    <declare-styleable name="TicketDividerView">
+        <attr name="td_endColor" format="color" />
+        <attr name="td_lineColor" format="color" />
+        <attr name="td_lineHeight" format="dimension" />
+        <attr name="td_strokeWidth" format="dimension" />
+    </declare-styleable>
+</resources>
