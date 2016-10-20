@@ -3,14 +3,14 @@ apply plugin: 'com.github.dcendents.android-maven'
 
 ext {
     bintrayRepo = 'maven'
-    bintrayName = 'ui'
+    bintrayName = 'smartown-library-ui'
     publishedGroupId = 'com.smartown.library'
     libraryName = 'UI'
-    artifact = 'ui'
+    artifact = 'smartown-library-ui'
     libraryDescription = 'UI Library'
     siteUrl = 'https://github.com/KungFuBrother/Library'
     gitUrl = 'https://github.com/KungFuBrother/Library.git'
-    libraryVersion = '0.0.1'
+    libraryVersion = project.VERSION_NAME
     developerId = 'tiger'
     developerName = 'Tiger'
     developerEmail = 'smartown@foxmail.com'
