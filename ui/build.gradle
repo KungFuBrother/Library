@@ -1,0 +1,45 @@
+apply plugin: 'com.android.library'
+
+ext {
+    bintrayRepo = 'maven'
+    bintrayName = 'ui'
+    publishedGroupId = 'com.smartown.library'
+    libraryName = 'UI'
+    artifact = 'ui'
+    libraryDescription = 'UI Library'
+    siteUrl = 'https://github.com/KungFuBrother/AndroidDevelopNote'
+    gitUrl = 'https://github.com/KungFuBrother/AndroidDevelopNote.git'
+    libraryVersion = '0.0.beta'
+    developerId = 'smartown'
+    developerName = 'Tiger'
+    developerEmail = 'smartown@foxmail.com'
+    licenseName = 'The Apache Software License, Version 2.0'
+    licenseUrl = 'http://www.apache.org/licenses/LICENSE-2.0.txt'
+    allLicenses = ["Apache-2.0"]
+}
+
+android {
+    compileSdkVersion Integer.parseInt(project.COMPILE_SDK)
+    buildToolsVersion project.BUILD_TOOL
+
+    defaultConfig {
+        minSdkVersion Integer.parseInt(project.MIN_SDK)
+        targetSdkVersion Integer.parseInt(project.TARGET_SDK)
+        versionCode Integer.parseInt(project.VERSION_CODE)
+        versionName project.VERSION_NAME
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    compile 'com.android.support:appcompat-v7:24.2.1'
+}
+
+apply from: 'https://raw.githubusercontent.com/nuuneoi/JCenter/master/installv1.gradle'
+apply from: 'https://raw.githubusercontent.com/nuuneoi/JCenter/master/bintrayv1.gradle'
