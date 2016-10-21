@@ -9,24 +9,20 @@ import android.util.AttributeSet;
 import android.view.View;
 
 /**
- * 作者：Tiger
+ * Author:Tiger[https://github.com/KungFuBrother]
  * <p>
- * 时间：2016-09-14 10:50
+ * CreateTime:2016-10-20 13:24:29
  * <p>
- * 描述：
+ * Description:LEDView
  */
 public abstract class LEDView extends View {
 
     private int color;
     private String number;
     private Paint paint;
-    //最小单位点的大小
     private int pointWidth;
-    //间隔大小
     private int intervalWidth;
-    //每行最多现实多少个字符
     private int maxColumnSize;
-    //每行的高度
     private int rowHeight;
     private boolean autoScroll;
     private boolean singleLine;
@@ -85,20 +81,10 @@ public abstract class LEDView extends View {
         setMeasuredDimension(rowWidth, rowSize * rowHeight);
     }
 
-    /**
-     * @return 行数
-     */
     protected abstract int getRowNum();
 
-    /**
-     * @return 列数
-     */
     protected abstract int getColumnNum();
 
-    /**
-     * @param s
-     * @return 绘图点阵数组
-     */
     protected abstract int[][] getPointsArray(String s);
 
     //    @Override

@@ -14,30 +14,30 @@ import android.view.MotionEvent;
 import android.view.View;
 
 /**
- * 作者：Smartown
+ * Author:Tiger[https://github.com/KungFuBrother]
  * <p>
- * 时间：2016-10-19 14:29:45
+ * CreateTime:2016-10-20 13:24:29
  * <p>
- * 描述：
+ * Description:IndicatorView
  */
 public class IndicatorView extends View {
 
     /**
-     * 期数
+     * count of points
      */
     private int count = 3;
     /**
-     * 未选中状态点大小
+     * size of normal point
      */
     private float pointWidth = 32;
     private int pointColor = Color.GRAY;
     /**
-     * 选中状态点大小
+     * size of selected point
      */
     private float selectedPointWidth = 48;
     private int selectedPointColor = Color.RED;
     /**
-     * 线条高度
+     * linked line height
      */
     private float lineHeight = 4;
     private float textSize = 24;
@@ -239,7 +239,7 @@ public class IndicatorView extends View {
                     nextPointArea = animatedArea - linkLineArea;
                     lineArea = pointArea - nextPointArea;
                 } else {
-                    //选中部分全在连接线上
+                    //selected color all on line
                     lineArea = pointArea;
                 }
             } else {
