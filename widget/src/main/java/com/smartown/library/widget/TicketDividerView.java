@@ -13,30 +13,18 @@ import android.util.AttributeSet;
 import android.view.View;
 
 /**
- * 作者：Tiger
- * <p/>
- * 时间：2016-09-29 14:00
- * <p/>
- * 描述：
+ * Author:Tiger[https://github.com/KungFuBrother]
+ * <p>
+ * CreateTime:2016-10-20 13:24:29
+ * <p>
+ * Description:TicketDividerView
  */
 public class TicketDividerView extends View {
 
     private Paint paint;
-    /**
-     * 两端的颜色
-     */
     private int endColor;
-    /**
-     * 虚线颜色
-     */
     private int lineColor;
-    /**
-     * 线条高度
-     */
     private float lineHeight;
-    /**
-     * 虚线的间隔宽度
-     */
     private float strokeWidth;
 
     private float width;
@@ -110,11 +98,6 @@ public class TicketDividerView extends View {
         canvas.drawPath(path, paint);
     }
 
-    /**
-     * 画虚线
-     *
-     * @param canvas
-     */
     private void drawStrokeLine(Canvas canvas) {
         paint.reset();
         paint.setAntiAlias(true);

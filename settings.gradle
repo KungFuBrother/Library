@@ -1,1 +1,1 @@
-include ':ui', ':demo', ':widget'
+include ':ui', ':demo', ':widget', ':adapter'

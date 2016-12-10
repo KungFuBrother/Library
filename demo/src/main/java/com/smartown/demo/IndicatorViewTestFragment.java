@@ -1,14 +1,19 @@
 package com.smartown.demo;
 
-import com.smartown.library.ui.base.BaseActivity;
-import com.smartown.library.ui.utils.JumpUtils;
+import com.smartown.library.ui.base.BaseFragment;
 
-public class MainActivity extends BaseActivity {
+/**
+ * Author:Tiger
+ * <p>
+ * CrateTime:2016-11-02 16:25
+ * <p>
+ * Description:
+ */
+public class IndicatorViewTestFragment extends BaseFragment {
 
     @Override
     protected void init() {
-        JumpUtils.jump(this, "Demo", SimpleListFragment.class);
-        finish();
+        findViews(R.layout.activity_main);
     }
 
     @Override
@@ -25,4 +30,5 @@ public class MainActivity extends BaseActivity {
     protected void registerViews() {
 
     }
+
 }

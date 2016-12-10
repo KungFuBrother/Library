@@ -10,11 +10,11 @@ import android.util.AttributeSet;
 import android.view.View;
 
 /**
- * 作者：Tiger
+ * Author:Tiger[https://github.com/KungFuBrother]
  * <p>
- * 时间：2016-08-23 15:43
+ * CreateTime:2016-10-20 13:24:29
  * <p>
- * 描述：饼状图控件
+ * Description:BingView
  */
 public class BingView extends View {
 
@@ -68,15 +68,6 @@ public class BingView extends View {
         }
     }
 
-    /**
-     * 画各部分扇形
-     *
-     * @param left
-     * @param top
-     * @param right
-     * @param bottom
-     * @param canvas
-     */
     private void drawArc(float left, float top, float right, float bottom, Canvas canvas) {
         RectF rectF = new RectF(left, top, right, bottom);
         paint.reset();
@@ -92,12 +83,6 @@ public class BingView extends View {
         }
     }
 
-    /**
-     * 描边
-     *
-     * @param canvas
-     * @param radius
-     */
     private void drawStroke(Canvas canvas, int radius) {
         if (strokeWidth <= 0) {
             return;

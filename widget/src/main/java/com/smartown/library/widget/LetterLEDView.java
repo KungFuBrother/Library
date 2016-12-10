@@ -4,11 +4,11 @@ import android.content.Context;
 import android.util.AttributeSet;
 
 /**
- * 作者：Tiger
- * <p/>
- * 时间：2016-09-14 15:03
- * <p/>
- * 描述：
+ * Author:Tiger[https://github.com/KungFuBrother]
+ * <p>
+ * CreateTime:2016-10-20 13:24:29
+ * <p>
+ * Description:LetterLEDView
  */
 public class LetterLEDView extends LEDView {
 
